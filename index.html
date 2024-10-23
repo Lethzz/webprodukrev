@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad Jelly - Kesegaran dalam Setiap Gigitan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Salad Jelly</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Rasakan Kesegaran Sehat dengan Salad Jelly!</h1>
+            <p>Nikmati kombinasi sempurna antara kelezatan dan manfaat kesehatan dalam setiap gigitan</p>
+            <a href="#products" class="btn btn-primary">Lihat Produk Kami</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h2>Tentang Kami</h2>
+                <p>Salad Jelly adalah inovasi terbaru dalam dunia makanan sehat. Kami menggabungkan kesegaran buah dan sayur dengan tekstur jelly yang unik untuk menciptakan pengalaman makan yang menyenangkan dan menyehatkan.</p>
+                <p>Setiap produk kami dibuat dengan bahan-bahan pilihan dan proses produksi yang higienis untuk menjamin kualitas terbaik bagi konsumen kami.</p>
+            </div>
+            <img src="images/about.jpg" alt="Tentang Kami" class="about-image" data-aos="fade-left">
+        </div>
+    </section>
+
+    <section id="products" class="section products">
+        <h2 data-aos="fade-up">Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/jelly1.jpg" alt="Jelly Buah" class="product-image">
+                <div class="product-info">
+                    <h3>Salad Jelly Buah</h3>
+                    <p>Kombinasi sempurna dari buah-buahan segar dengan tekstur jelly yang kenyal dan menyegarkan.</p>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/jelly2.jpg" alt="Jelly Sayur" class="product-image">
+                <div class="product-info">
+                    <h3>Salad Jelly Sayur</h3>
+                    <p>Inovasi terbaru dengan paduan sayuran sehat dalam bentuk jelly yang lezat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="contact-form" data-aos="zoom-in">
+            <h2 class="text-center mb-4">Hubungi Kami</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salad Jelly. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
