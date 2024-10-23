@@ -14,7 +14,7 @@
 
 /* Navbar Styles */
 .navbar {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
