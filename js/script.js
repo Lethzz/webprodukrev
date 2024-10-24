@@ -27,17 +27,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form handling
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    const formMessage = document.getElementById('formMessage');
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    if (name && email && message) {
-        formMessage.textContent = 'Pesan Anda berhasil dikirim!';
+    if (name && message) {
+        const whatsappNumber = '6283801663328'; // Ganti dengan nomor WhatsApp yang dituju
+        const whatsappMessage = `Nama: ${name}\nPesan: ${message}`;
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
+
+        // Jika Anda ingin menampilkan pesan sukses di halaman
+        const formMessage = document.getElementById('formMessage');
+        formMessage.textContent = 'Pesan Anda berhasil dikirim ke WhatsApp!';
         formMessage.className = 'form-message success';
         formMessage.style.display = 'block';
+        
         this.reset();
     } else {
+        const formMessage = document.getElementById('formMessage');
         formMessage.textContent = 'Mohon lengkapi semua bidang!';
         formMessage.className = 'form-message error';
         formMessage.style.display = 'block';
